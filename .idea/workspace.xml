@@ -1,8 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6ec50da8-d926-46a2-bee2-e27dee00d400" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/NetworkLabs.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httpc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplib.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post_body.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="JupyterTrust" id="30c66e41-551a-443a-b20a-693f817a0788" />
+  <component name="ProjectId" id="1yVDCLysgg1oj5dVZb6qieCdClB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.httpc">
+    <configuration name="httpc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NetworkLabs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/httpc.py" />
+      <option name="PARAMETERS" value="get httpbin.org/get" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="httplib" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NetworkLabs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/httplib.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.httpc" />
+      <item itemvalue="Python.httplib" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.httpc" />
+        <item itemvalue="Python.httplib" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ec50da8-d926-46a2-bee2-e27dee00d400" name="Default Changelist" comment="" />
+      <created>1632327732220</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632327732220</updated>
+      <workItem from="1632327733279" duration="22183000" />
+      <workItem from="1632423158589" duration="240000" />
+      <workItem from="1632491901780" duration="281000" />
+      <workItem from="1632492204233" duration="8929000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1172" y="352" key="#Plugins" timestamp="1632492282297">
+      <screen x="0" y="25" width="2560" height="1365" />
+    </state>
+    <state x="1172" y="352" key="#Plugins/0.25.2560.1365@0.25.2560.1365" timestamp="1632492282297" />
+    <state x="613" y="549" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1632511011886">
+      <screen x="0" y="25" width="2560" height="1365" />
+    </state>
+    <state x="248" y="122" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.825@0.25.1440.825" timestamp="1632411705730" />
+    <state x="613" y="549" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.2560.1365@0.25.2560.1365" timestamp="1632511011886" />
+    <state x="936" y="599" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1632347371483">
+      <screen x="0" y="25" width="2560" height="1365" />
+    </state>
+    <state x="936" y="599" key="#com.intellij.ide.macro.MacrosDialog/0.25.2560.1365@0.25.2560.1365" timestamp="1632347371483" />
+    <state width="1887" height="477" key="GridCell.Tab.0.bottom" timestamp="1632511023902">
+      <screen x="0" y="25" width="2560" height="1365" />
+    </state>
+    <state width="1398" height="262" key="GridCell.Tab.0.bottom/0.25.1440.825@0.25.1440.825" timestamp="1632413979666" />
+    <state width="1887" height="477" key="GridCell.Tab.0.bottom/0.25.2560.1365@0.25.2560.1365" timestamp="1632511023902" />
+    <state width="1887" height="477" key="GridCell.Tab.0.center" timestamp="1632511023902">
+      <screen x="0" y="25" width="2560" height="1365" />
+    </state>
+    <state width="1398" height="262" key="GridCell.Tab.0.center/0.25.1440.825@0.25.1440.825" timestamp="1632413979665" />
+    <state width="1887" height="477" key="GridCell.Tab.0.center/0.25.2560.1365@0.25.2560.1365" timestamp="1632511023902" />
+    <state width="1887" height="477" key="GridCell.Tab.0.left" timestamp="1632511023900">
+      <screen x="0" y="25" width="2560" height="1365" />
+    </state>
+    <state width="1398" height="262" key="GridCell.Tab.0.left/0.25.1440.825@0.25.1440.825" timestamp="1632413979664" />
+    <state width="1887" height="477" key="GridCell.Tab.0.left/0.25.2560.1365@0.25.2560.1365" timestamp="1632511023900" />
+    <state width="1887" height="477" key="GridCell.Tab.0.right" timestamp="1632511023902">
+      <screen x="0" y="25" width="2560" height="1365" />
+    </state>
+    <state width="1398" height="262" key="GridCell.Tab.0.right/0.25.1440.825@0.25.1440.825" timestamp="1632413979665" />
+    <state width="1887" height="477" key="GridCell.Tab.0.right/0.25.2560.1365@0.25.2560.1365" timestamp="1632511023902" />
+    <state width="1887" height="477" key="GridCell.Tab.1.bottom" timestamp="1632511023904">
+      <screen x="0" y="25" width="2560" height="1365" />
+    </state>
+    <state width="1398" height="262" key="GridCell.Tab.1.bottom/0.25.1440.825@0.25.1440.825" timestamp="1632413979667" />
+    <state width="1887" height="477" key="GridCell.Tab.1.bottom/0.25.2560.1365@0.25.2560.1365" timestamp="1632511023904" />
+    <state width="1887" height="477" key="GridCell.Tab.1.center" timestamp="1632511023903">
+      <screen x="0" y="25" width="2560" height="1365" />
+    </state>
+    <state width="1398" height="262" key="GridCell.Tab.1.center/0.25.1440.825@0.25.1440.825" timestamp="1632413979667" />
+    <state width="1887" height="477" key="GridCell.Tab.1.center/0.25.2560.1365@0.25.2560.1365" timestamp="1632511023903" />
+    <state width="1887" height="477" key="GridCell.Tab.1.left" timestamp="1632511023903">
+      <screen x="0" y="25" width="2560" height="1365" />
+    </state>
+    <state width="1398" height="262" key="GridCell.Tab.1.left/0.25.1440.825@0.25.1440.825" timestamp="1632413979666" />
+    <state width="1887" height="477" key="GridCell.Tab.1.left/0.25.2560.1365@0.25.2560.1365" timestamp="1632511023903" />
+    <state width="1887" height="477" key="GridCell.Tab.1.right" timestamp="1632511023904">
+      <screen x="0" y="25" width="2560" height="1365" />
+    </state>
+    <state width="1398" height="262" key="GridCell.Tab.1.right/0.25.1440.825@0.25.1440.825" timestamp="1632413979667" />
+    <state width="1887" height="477" key="GridCell.Tab.1.right/0.25.2560.1365@0.25.2560.1365" timestamp="1632511023904" />
+    <state x="1095" y="329" key="SettingsEditor" timestamp="1632494892148">
+      <screen x="0" y="25" width="2560" height="1365" />
+    </state>
+    <state x="1095" y="329" key="SettingsEditor/0.25.2560.1365@0.25.2560.1365" timestamp="1632494892148" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/NetworkLabs$httplib.coverage" NAME="httplib Coverage Results" MODIFIED="1632410768770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NetworkLabs$httpc.coverage" NAME="httpc Coverage Results" MODIFIED="1632511016356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
