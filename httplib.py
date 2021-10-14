@@ -1,4 +1,5 @@
 import socket
+import re
 from urllib.parse import urlparse
 
 
@@ -13,17 +14,24 @@ def send_request(method, url, headers, verbose, body=''):
         msg = construct_request(method, parsed_url, headers, body=body)
         conn.sendall(msg)
         response = recvall(conn, buffsize=4096)
-        return construct_response(msg, response, verbose)
+        response, status_code = construct_response(msg, response, verbose)
+        if status_code.startswith(b"3"):
+            re_location = re.compile(b"location: ([\s\S]*?)\r\n", re.IGNORECASE)
+            new_url = re_location.findall(response)[0]
+            return send_request(method, new_url.decode('ascii'), headers, verbose, body='')
+        else:
+            return response
     finally:
         conn.close()
 
 
 def construct_response(request, response, verbose):
+    status_code = response.split(b" ")[1]
     if verbose:
         response = request + b'\n\n' + response
     else:
         response = response.split(b'\r\n\r\n')[1]
-    return response
+    return response, status_code
 
 
 # construct get request msg, encoding headers in ASCII
@@ -35,6 +43,8 @@ def construct_request(method, parsed_url, headers, body=''):
     url_without_host = ''
     if parsed_url.path:
         url_without_host += parsed_url.path
+    else:
+        url_without_host += "/"
     if parsed_url.params:
         url_without_host += (";" + parsed_url.params)
     if parsed_url.query:

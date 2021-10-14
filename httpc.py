@@ -16,18 +16,20 @@ if __name__ == '__main__':
     group.add_argument("-d", "--data", help="inline data", type=str)
     group.add_argument("-f", "--file", help="read from file", type=str)
 
+    parser.add_argument("-o", "--output", help="output to file", type=str)
+
     parser.add_argument("-h", "--header", help="header", type=str, action="append")
 
     args = parser.parse_args()
     url = args.URL
     headers = args.header
 
+    response = ""
     if args.method == 'get':
         if args.data or args.file:
             print("Cannot use '-d' or '-f' in GET method")
             exit(1)
         response = httplib.send_request('get', url, headers, verbose=args.verbose)
-        print(response.decode('ascii'))
 
     if args.method == 'post':
         body = ''
@@ -38,6 +40,11 @@ if __name__ == '__main__':
             with open(filename, 'r') as f:
                 body = str.strip(f.read())
         response = httplib.send_request('post', url, headers, verbose=args.verbose, body=body)
+
+    if args.output:
+        with open(args.output, "w") as fo:
+            fo.write(response.decode('ascii'))
+    else:
         print(response.decode('ascii'))
 
 
