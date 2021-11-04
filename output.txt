@@ -7,7 +7,7 @@
     "Accept": "*/*", 
     "Host": "httpbin.org", 
     "User-Agent": "httpc/1.0", 
-    "X-Amzn-Trace-Id": "Root=1-61683a63-274199051385c0dd28b49f65"
+    "X-Amzn-Trace-Id": "Root=1-61684ea0-715c1c13384e150b1231360d"
   }, 
   "origin": "38.15.85.128", 
   "url": "http://httpbin.org/get?course=network&assignment=1"

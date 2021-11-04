@@ -1,6 +1,7 @@
 import socket
 import re
 from urllib.parse import urlparse
+import utils
 
 
 def send_request(method, url, headers, verbose, body=''):
@@ -10,10 +11,11 @@ def send_request(method, url, headers, verbose, body=''):
     parsed_url = urlparse(url)
 
     try:
-        conn.connect((parsed_url.netloc, 80))
+        port = 80 if parsed_url.port is None else parsed_url.port
+        conn.connect((parsed_url.hostname, port))
         msg = construct_request(method, parsed_url, headers, body=body)
         conn.sendall(msg)
-        response = recvall(conn, buffsize=4096)
+        response = utils.recvall(conn, buffsize=4096)
         response, status_code = construct_response(msg, response, verbose)
         if status_code.startswith(b"3"):
             re_location = re.compile(b"location: ([\s\S]*?)\r\n", re.IGNORECASE)
@@ -58,10 +60,10 @@ def construct_request(method, parsed_url, headers, body=''):
         # union default headers and customized headers
         http_headers = {'Host': parsed_url.netloc, 'User-Agent': 'httpc/1.0', 'Accept': '*/*'}
         if headers:
-            customized_headers = parse_headers(headers)
+            customized_headers = utils.parse_str_list_to_dict(headers)
             http_headers.update(customized_headers)
 
-        http_headers_str = dict_to_str(http_headers)
+        http_headers_str = utils.dict_to_str(http_headers)
         msg += http_headers_str
         msg += '\r\n'
         return msg.encode(encoding='ascii')
@@ -71,46 +73,14 @@ def construct_request(method, parsed_url, headers, body=''):
         http_headers = {'Host': parsed_url.netloc, 'User-Agent': 'httpc/1.0', 'Accept': '*/*',
                         'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': len(body)}
         if headers:
-            customized_headers = parse_headers(headers)
+            customized_headers = utils.parse_str_list_to_dict(headers)
             http_headers.update(customized_headers)
-        http_headers_str = dict_to_str(http_headers)
+        http_headers_str = utils.dict_to_str(http_headers)
         msg += http_headers_str
         msg += '\r\n'
         msg += body
         return msg.encode(encoding='ascii')
 
 
-def dict_to_str(headers):
-    """
-    :param headers:
-    :return:
-    """
-    msg = ""
-    for k, v in headers.items():
-        msg += (k + ': ' + str(v) + '\r\n')
-    return msg
 
 
-def parse_headers(headers):
-    """
-    Parse list of str to dict. e.g: ['k1:v1', 'k2:v2'] -> {k1:v1, k2:v2}
-    :param headers: list of str
-    :return: dict
-    """
-    res = dict()
-    for s in headers:
-        tmp = s.split(':')
-        k = tmp[0]
-        v = tmp[1]
-        res[k] = v
-    return res
-
-
-def recvall(conn, buffsize):
-    data = b''
-    while True:
-        part = conn.recv(buffsize)
-        data += part
-        if len(part) < buffsize:
-            break
-    return data
