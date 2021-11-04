@@ -8,11 +8,12 @@ import os
 
 
 class HttpFs:
-    def __init__(self, host, port, root_path):
+    def __init__(self, host, port, root_path, verbose):
         self.host = host
         # self.root_path = root_path
         self.root_path = os.path.abspath(root_path)
         self.port = port
+        self.verbose = verbose
         print(os.path.abspath(root_path))
 
     def run_server(self):
@@ -39,8 +40,10 @@ class HttpFs:
 
             # parse header string to a dictionary
             header = self.parse_header(header_str)
-            print(header)
-            print(body_str)
+
+            if self.verbose:
+                print("\nRequest header is: \n" + str(header))
+                print("\nRequest body is: \n" + str(body_str))
 
             msg = b""
             status = 0
@@ -50,12 +53,14 @@ class HttpFs:
             elif header[b'method'].lower() == b'post':
                 status, msg = self.handle_post_request(header, body_str)
 
-            print("msg is :")
-            print(msg)
-            print("status code is " + str(status))
+            if self.verbose:
+                print("\nResponse status code is: " + str(status))
+                print("\nResponse msg is :\n" + str(msg))
 
             response = self.make_http_response(status, msg)
-            print(response)
+
+            if self.verbose:
+                print("\nResponse sent to client is:\n" + str(response))
 
             conn.sendall(response)
 
@@ -66,7 +71,11 @@ class HttpFs:
     def handle_get_request(self, header, body_str):
         path = header[b'path']
         if path == b'/':
-            return 200, os.listdir(self.root_path)
+            files_list = os.listdir(self.root_path)
+            msg = b""
+            for file in files_list:
+                msg += (file + b"\n")
+            return 200, msg
         else:
             file_path = os.path.abspath(self.root_path + path)
             if not self.is_safe_path(file_path):
@@ -81,6 +90,10 @@ class HttpFs:
 
 
     def handle_post_request(self, header, body_str):
+        append_mode = False
+        if b'append' in header and header[b'append'] == b'True':
+            append_mode = True
+
         path = header[b'path']
         if path == b'/':
             return 400, b"Bad request, please provide a file name!"
@@ -91,7 +104,8 @@ class HttpFs:
                 return 400, b"Bad Request, cannot access files outside of directory!"
 
             try:
-                with open(file_path, 'w') as f:
+                write_mode = 'a' if append_mode else 'w'
+                with open(file_path, write_mode) as f:
                     f.write(body_str.decode('ascii'))
                     return 200, b"Write to file success!"
             except OSError:
@@ -162,7 +176,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("-p", "--port", help="port number of server", type=int, default=8080)
     parser.add_argument("-d", "--directory", help="root path of this file server", type=bytes, default=b"FileServer/")
+    parser.add_argument("-v", "--verbose", help="verbose mode", action="store_true")
     args = parser.parse_args()
 
-    fs = HttpFs("", args.port, args.directory)
+    fs = HttpFs("", args.port, args.directory, args.verbose)
     fs.run_server()

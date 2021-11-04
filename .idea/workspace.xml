@@ -19,14 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ec50da8-d926-46a2-bee2-e27dee00d400" name="Default Changelist" comment="finished except bonus">
-      <change afterPath="$PROJECT_DIR$/FileServer/file1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FileServer/file2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/httpfs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+    <list default="true" id="6ec50da8-d926-46a2-bee2-e27dee00d400" name="Default Changelist" comment="almost done, handle Content-Type not done yet">
+      <change afterPath="$PROJECT_DIR$/FileServer/test_sys.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run_lab2.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httplib.py" beforeDir="false" afterPath="$PROJECT_DIR$/httplib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileServer/file1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FileServer/file1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileServer/file2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FileServer/file2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/httpfs.py" beforeDir="false" afterPath="$PROJECT_DIR$/httpfs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +70,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.httpfs">
+  <component name="RunManager" selected="Shell Script.run_lab2.sh">
     <configuration name="httpc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NetworkLabs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -107,7 +107,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/httpfs.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="PARAMETERS" value="-v" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -137,13 +137,26 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="run_lab2.sh" type="ShConfigurationType" temporary="true">
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/run_lab2.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/zsh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.httpc" />
       <item itemvalue="Python.httplib" />
       <item itemvalue="Python.httpfs" />
+      <item itemvalue="Shell Script.run_lab2.sh" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Shell Script.run_lab2.sh" />
         <item itemvalue="Python.httpfs" />
         <item itemvalue="Python.httpc" />
         <item itemvalue="Python.httplib" />
@@ -167,7 +180,7 @@
       <workItem from="1634219575412" duration="3880000" />
       <workItem from="1635089607162" duration="11100000" />
       <workItem from="1635964651624" duration="12870000" />
-      <workItem from="1636033127680" duration="6180000" />
+      <workItem from="1636033127680" duration="12434000" />
     </task>
     <task id="LOCAL-00001" summary="finished except bonus">
       <created>1632525486759</created>
@@ -176,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632525486759</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="almost done, handle Content-Type not done yet">
+      <created>1636050382169</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1636050382169</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,19 +216,20 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finished except bonus" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished except bonus" />
+    <MESSAGE value="almost done, handle Content-Type not done yet" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost done, handle Content-Type not done yet" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1172" y="352" key="#Plugins" timestamp="1632492282297">
       <screen x="0" y="25" width="2560" height="1365" />
     </state>
     <state x="1172" y="352" key="#Plugins/0.25.2560.1365@0.25.2560.1365" timestamp="1632492282297" />
-    <state x="1610" y="-133" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1635980474513">
-      <screen x="1440" y="-470" width="2560" height="1440" />
+    <state x="248" y="122" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1636052006841">
+      <screen x="0" y="25" width="1440" height="825" />
     </state>
     <state x="196" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.825/1440.-470.2560.1440@0.25.1440.825" timestamp="1635100617852" />
     <state x="1610" y="-133" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.825/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1635980474513" />
-    <state x="248" y="122" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.825@0.25.1440.825" timestamp="1633804558441" />
+    <state x="248" y="122" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.825@0.25.1440.825" timestamp="1636052006841" />
     <state x="613" y="549" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.2560.1365@0.25.2560.1365" timestamp="1632511011886" />
     <state x="2035" y="58" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1634220518658">
       <screen x="1440" y="-470" width="2560" height="1440" />
@@ -222,33 +243,33 @@
       <screen x="0" y="25" width="1440" height="825" />
     </state>
     <state width="1440" height="438" key="DebuggerActiveHint/0.25.1440.825@0.25.1440.825" timestamp="1633804328605" />
-    <state width="1398" height="310" key="GridCell.Tab.0.bottom" timestamp="1636041828453">
+    <state width="1398" height="299" key="GridCell.Tab.0.bottom" timestamp="1636056243586">
       <screen x="0" y="25" width="1440" height="825" />
     </state>
     <state width="1398" height="310" key="GridCell.Tab.0.bottom/0.25.1440.825/1440.-470.2560.1440@0.25.1440.825" timestamp="1636041828453" />
     <state width="1852" height="332" key="GridCell.Tab.0.bottom/0.25.1440.825/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1635991485920" />
-    <state width="1398" height="261" key="GridCell.Tab.0.bottom/0.25.1440.825@0.25.1440.825" timestamp="1633804524428" />
+    <state width="1398" height="299" key="GridCell.Tab.0.bottom/0.25.1440.825@0.25.1440.825" timestamp="1636056243586" />
     <state width="1887" height="477" key="GridCell.Tab.0.bottom/0.25.2560.1365@0.25.2560.1365" timestamp="1632525498630" />
-    <state width="1398" height="310" key="GridCell.Tab.0.center" timestamp="1636041828452">
+    <state width="1398" height="299" key="GridCell.Tab.0.center" timestamp="1636056243585">
       <screen x="0" y="25" width="1440" height="825" />
     </state>
     <state width="1398" height="310" key="GridCell.Tab.0.center/0.25.1440.825/1440.-470.2560.1440@0.25.1440.825" timestamp="1636041828452" />
     <state width="1852" height="332" key="GridCell.Tab.0.center/0.25.1440.825/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1635991485919" />
-    <state width="1398" height="261" key="GridCell.Tab.0.center/0.25.1440.825@0.25.1440.825" timestamp="1633804524427" />
+    <state width="1398" height="299" key="GridCell.Tab.0.center/0.25.1440.825@0.25.1440.825" timestamp="1636056243585" />
     <state width="1887" height="477" key="GridCell.Tab.0.center/0.25.2560.1365@0.25.2560.1365" timestamp="1632525498629" />
-    <state width="1398" height="310" key="GridCell.Tab.0.left" timestamp="1636041828452">
+    <state width="1398" height="299" key="GridCell.Tab.0.left" timestamp="1636056243584">
       <screen x="0" y="25" width="1440" height="825" />
     </state>
     <state width="1398" height="310" key="GridCell.Tab.0.left/0.25.1440.825/1440.-470.2560.1440@0.25.1440.825" timestamp="1636041828452" />
     <state width="1852" height="332" key="GridCell.Tab.0.left/0.25.1440.825/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1635991485919" />
-    <state width="1398" height="261" key="GridCell.Tab.0.left/0.25.1440.825@0.25.1440.825" timestamp="1633804524426" />
+    <state width="1398" height="299" key="GridCell.Tab.0.left/0.25.1440.825@0.25.1440.825" timestamp="1636056243584" />
     <state width="1887" height="477" key="GridCell.Tab.0.left/0.25.2560.1365@0.25.2560.1365" timestamp="1632525498629" />
-    <state width="1398" height="310" key="GridCell.Tab.0.right" timestamp="1636041828453">
+    <state width="1398" height="299" key="GridCell.Tab.0.right" timestamp="1636056243585">
       <screen x="0" y="25" width="1440" height="825" />
     </state>
     <state width="1398" height="310" key="GridCell.Tab.0.right/0.25.1440.825/1440.-470.2560.1440@0.25.1440.825" timestamp="1636041828453" />
     <state width="1852" height="332" key="GridCell.Tab.0.right/0.25.1440.825/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1635991485919" />
-    <state width="1398" height="261" key="GridCell.Tab.0.right/0.25.1440.825@0.25.1440.825" timestamp="1633804524428" />
+    <state width="1398" height="299" key="GridCell.Tab.0.right/0.25.1440.825@0.25.1440.825" timestamp="1636056243585" />
     <state width="1887" height="477" key="GridCell.Tab.0.right/0.25.2560.1365@0.25.2560.1365" timestamp="1632525498630" />
     <state width="1398" height="360" key="GridCell.Tab.1.bottom" timestamp="1635100192026">
       <screen x="0" y="25" width="1440" height="825" />
@@ -282,9 +303,10 @@
       <screen x="0" y="25" width="2560" height="1365" />
     </state>
     <state x="1095" y="329" key="SettingsEditor/0.25.2560.1365@0.25.2560.1365" timestamp="1632494892148" />
-    <state x="1172" y="444" key="Vcs.Push.Dialog.v2" timestamp="1632525494651">
-      <screen x="0" y="25" width="2560" height="1365" />
+    <state x="534" y="262" key="Vcs.Push.Dialog.v2" timestamp="1636050388010">
+      <screen x="0" y="25" width="1440" height="825" />
     </state>
+    <state x="534" y="262" key="Vcs.Push.Dialog.v2/0.25.1440.825@0.25.1440.825" timestamp="1636050388010" />
     <state x="1172" y="444" key="Vcs.Push.Dialog.v2/0.25.2560.1365@0.25.2560.1365" timestamp="1632525494651" />
     <state width="1280" height="720" key="XDebugger.FullValuePopup" timestamp="1633808869686">
       <screen x="1440" y="-470" width="2560" height="1440" />
@@ -303,6 +325,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NetworkLabs$httplib.coverage" NAME="httplib Coverage Results" MODIFIED="1632410768770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NetworkLabs$httpc.coverage" NAME="httpc Coverage Results" MODIFIED="1633809751762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NetworkLabs$httpfs.coverage" NAME="httpfs Coverage Results" MODIFIED="1636041222311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NetworkLabs$httpfs.coverage" NAME="httpfs Coverage Results" MODIFIED="1636056237849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

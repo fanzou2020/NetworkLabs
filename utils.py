@@ -33,7 +33,7 @@ def parse_str_list_to_dict(headers):
         elif type(s) == bytes:
             tmp = s.split(b':')
         k = tmp[0].strip()
-        v = s[len(k):].strip()
+        v = s[len(k)+1:].strip()
         res[k] = v
     return res
 
