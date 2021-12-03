@@ -19,8 +19,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ec50da8-d926-46a2-bee2-e27dee00d400" name="Default Changelist" comment="almost done, handle Content-Type not done yet">
-      <change beforePath="$PROJECT_DIR$/run_lab2.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_lab2.sh" afterDir="false" />
+    <list default="true" id="6ec50da8-d926-46a2-bee2-e27dee00d400" name="Default Changelist" comment="minor update">
+      <change afterPath="$PROJECT_DIR$/P3/example/python/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/P3/example/python/packet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/P3/example/python/udp_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/P3/example/python/udp_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/P3/example/router/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/P3/example/router/checksum.md5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/P3/example/router/checksum.sha256" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/P3/example/router/linux/router_x64" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/P3/example/router/linux/router_x86" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/P3/example/router/macos/router" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/P3/example/router/source/router" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/P3/example/router/source/router.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/P3/example/router/windows/router_x64.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/P3/example/router/windows/router_x86.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/P3/rdt/demo_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/P3/rdt/demo_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/P3/rdt/rdt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileServer/file3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FileServer/file3.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +79,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/P3" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Shell Script.run_lab2.sh">
-    <configuration name="httpc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/P3" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.demo_server">
+    <configuration name="demo_client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NetworkLabs" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -73,13 +96,35 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/P3/rdt" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/httpc.py" />
-      <option name="PARAMETERS" value="get &quot;httpbingo.org/redirect-to?url=www.google.com&amp;status_code=302&quot; -v" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/P3/rdt/demo_client.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo_server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NetworkLabs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/P3/rdt" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/P3/rdt/demo_server.py" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -109,7 +154,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="httplib" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="rdt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NetworkLabs" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -117,12 +162,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/P3/rdt" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/httplib.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/P3/rdt/rdt.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -131,29 +176,37 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="run_lab2.sh" type="ShConfigurationType" temporary="true">
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/run_lab2.sh" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="/bin/zsh" />
+    <configuration name="pytest in demo_client.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="NetworkLabs" />
       <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/P3/rdt" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/P3/rdt/demo_client.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.httpc" />
-      <item itemvalue="Python.httplib" />
       <item itemvalue="Python.httpfs" />
-      <item itemvalue="Shell Script.run_lab2.sh" />
+      <item itemvalue="Python.demo_client" />
+      <item itemvalue="Python.demo_server" />
+      <item itemvalue="Python.rdt" />
+      <item itemvalue="Python tests.pytest in demo_client.py" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Shell Script.run_lab2.sh" />
+        <item itemvalue="Python.demo_server" />
+        <item itemvalue="Python.demo_client" />
+        <item itemvalue="Python.rdt" />
         <item itemvalue="Python.httpfs" />
-        <item itemvalue="Python.httpc" />
-        <item itemvalue="Python.httplib" />
+        <item itemvalue="Python tests.pytest in demo_client.py" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +227,15 @@
       <workItem from="1634219575412" duration="3880000" />
       <workItem from="1635089607162" duration="11100000" />
       <workItem from="1635964651624" duration="12870000" />
-      <workItem from="1636033127680" duration="12920000" />
+      <workItem from="1636033127680" duration="12971000" />
+      <workItem from="1636835092237" duration="2525000" />
+      <workItem from="1636894727698" duration="9930000" />
+      <workItem from="1637157837729" duration="24822000" />
+      <workItem from="1637332557139" duration="8109000" />
+      <workItem from="1637776308803" duration="7941000" />
+      <workItem from="1638033386711" duration="21555000" />
+      <workItem from="1638541043123" duration="14378000" />
+      <workItem from="1638563171888" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="finished except bonus">
       <created>1632525486759</created>
@@ -190,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636050382169</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="minor update">
+      <created>1636057057350</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1636057057351</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,24 +279,28 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finished except bonus" />
     <MESSAGE value="almost done, handle Content-Type not done yet" />
-    <option name="LAST_COMMIT_MESSAGE" value="almost done, handle Content-Type not done yet" />
+    <MESSAGE value="minor update" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1172" y="352" key="#Plugins" timestamp="1632492282297">
       <screen x="0" y="25" width="2560" height="1365" />
     </state>
     <state x="1172" y="352" key="#Plugins/0.25.2560.1365@0.25.2560.1365" timestamp="1632492282297" />
-    <state x="248" y="122" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1636052006841">
-      <screen x="0" y="25" width="1440" height="825" />
+    <state x="1846" y="-282" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1638543686356">
+      <screen x="1440" y="-470" width="2560" height="1440" />
     </state>
     <state x="196" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.825/1440.-470.2560.1440@0.25.1440.825" timestamp="1635100617852" />
     <state x="1610" y="-133" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.825/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1635980474513" />
     <state x="248" y="122" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.825@0.25.1440.825" timestamp="1636052006841" />
+    <state x="248" y="128" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.875/1440.-470.2560.1440@0.25.1440.875" timestamp="1637184307484" />
+    <state x="1846" y="-282" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.875/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1638543686356" />
     <state x="613" y="549" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.2560.1365@0.25.2560.1365" timestamp="1632511011886" />
-    <state x="2035" y="58" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1634220518658">
-      <screen x="1440" y="-470" width="2560" height="1440" />
+    <state x="335" y="346" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1636843052257">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="2035" y="58" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.825/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1634220518658" />
+    <state x="335" y="346" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.875/1440.-470.2560.1440@0.25.1440.875" timestamp="1636843052257" />
     <state x="936" y="599" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1632347371483">
       <screen x="0" y="25" width="2560" height="1365" />
     </state>
@@ -237,88 +309,125 @@
       <screen x="0" y="25" width="1440" height="825" />
     </state>
     <state width="1440" height="438" key="DebuggerActiveHint/0.25.1440.825@0.25.1440.825" timestamp="1633804328605" />
-    <state width="1398" height="299" key="GridCell.Tab.0.bottom" timestamp="1636056699494">
+    <state x="99" y="107" key="DiffContextDialog" timestamp="1636057066575">
       <screen x="0" y="25" width="1440" height="825" />
+    </state>
+    <state x="99" y="107" key="DiffContextDialog/0.25.1440.825@0.25.1440.825" timestamp="1636057066575" />
+    <state width="1766" height="548" key="GridCell.Tab.0.bottom" timestamp="1638557014505">
+      <screen x="1440" y="-470" width="2560" height="1440" />
     </state>
     <state width="1398" height="310" key="GridCell.Tab.0.bottom/0.25.1440.825/1440.-470.2560.1440@0.25.1440.825" timestamp="1636041828453" />
-    <state width="1852" height="332" key="GridCell.Tab.0.bottom/0.25.1440.825/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1635991485920" />
-    <state width="1398" height="299" key="GridCell.Tab.0.bottom/0.25.1440.825@0.25.1440.825" timestamp="1636056699494" />
+    <state width="1766" height="548" key="GridCell.Tab.0.bottom/0.25.1440.825/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1638557014505" />
+    <state width="1398" height="299" key="GridCell.Tab.0.bottom/0.25.1440.825@0.25.1440.825" timestamp="1636057080042" />
+    <state width="1398" height="321" key="GridCell.Tab.0.bottom/0.25.1440.875/1440.-470.2560.1440@0.25.1440.875" timestamp="1637184332901" />
+    <state width="2219" height="497" key="GridCell.Tab.0.bottom/0.25.1440.875/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1638066432849" />
+    <state width="2219" height="515" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1638153784521" />
     <state width="1887" height="477" key="GridCell.Tab.0.bottom/0.25.2560.1365@0.25.2560.1365" timestamp="1632525498630" />
-    <state width="1398" height="299" key="GridCell.Tab.0.center" timestamp="1636056699494">
-      <screen x="0" y="25" width="1440" height="825" />
+    <state width="1766" height="548" key="GridCell.Tab.0.center" timestamp="1638557014504">
+      <screen x="1440" y="-470" width="2560" height="1440" />
     </state>
     <state width="1398" height="310" key="GridCell.Tab.0.center/0.25.1440.825/1440.-470.2560.1440@0.25.1440.825" timestamp="1636041828452" />
-    <state width="1852" height="332" key="GridCell.Tab.0.center/0.25.1440.825/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1635991485919" />
-    <state width="1398" height="299" key="GridCell.Tab.0.center/0.25.1440.825@0.25.1440.825" timestamp="1636056699494" />
+    <state width="1766" height="548" key="GridCell.Tab.0.center/0.25.1440.825/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1638557014504" />
+    <state width="1398" height="299" key="GridCell.Tab.0.center/0.25.1440.825@0.25.1440.825" timestamp="1636057080041" />
+    <state width="1398" height="321" key="GridCell.Tab.0.center/0.25.1440.875/1440.-470.2560.1440@0.25.1440.875" timestamp="1637184332901" />
+    <state width="2219" height="497" key="GridCell.Tab.0.center/0.25.1440.875/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1638066432848" />
+    <state width="2219" height="515" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1638153784520" />
     <state width="1887" height="477" key="GridCell.Tab.0.center/0.25.2560.1365@0.25.2560.1365" timestamp="1632525498629" />
-    <state width="1398" height="299" key="GridCell.Tab.0.left" timestamp="1636056699493">
-      <screen x="0" y="25" width="1440" height="825" />
+    <state width="1766" height="548" key="GridCell.Tab.0.left" timestamp="1638557014503">
+      <screen x="1440" y="-470" width="2560" height="1440" />
     </state>
     <state width="1398" height="310" key="GridCell.Tab.0.left/0.25.1440.825/1440.-470.2560.1440@0.25.1440.825" timestamp="1636041828452" />
-    <state width="1852" height="332" key="GridCell.Tab.0.left/0.25.1440.825/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1635991485919" />
-    <state width="1398" height="299" key="GridCell.Tab.0.left/0.25.1440.825@0.25.1440.825" timestamp="1636056699493" />
+    <state width="1766" height="548" key="GridCell.Tab.0.left/0.25.1440.825/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1638557014503" />
+    <state width="1398" height="299" key="GridCell.Tab.0.left/0.25.1440.825@0.25.1440.825" timestamp="1636057080040" />
+    <state width="1398" height="321" key="GridCell.Tab.0.left/0.25.1440.875/1440.-470.2560.1440@0.25.1440.875" timestamp="1637184332900" />
+    <state width="2219" height="497" key="GridCell.Tab.0.left/0.25.1440.875/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1638066432848" />
+    <state width="2219" height="515" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1638153784520" />
     <state width="1887" height="477" key="GridCell.Tab.0.left/0.25.2560.1365@0.25.2560.1365" timestamp="1632525498629" />
-    <state width="1398" height="299" key="GridCell.Tab.0.right" timestamp="1636056699494">
-      <screen x="0" y="25" width="1440" height="825" />
+    <state width="1766" height="548" key="GridCell.Tab.0.right" timestamp="1638557014505">
+      <screen x="1440" y="-470" width="2560" height="1440" />
     </state>
     <state width="1398" height="310" key="GridCell.Tab.0.right/0.25.1440.825/1440.-470.2560.1440@0.25.1440.825" timestamp="1636041828453" />
-    <state width="1852" height="332" key="GridCell.Tab.0.right/0.25.1440.825/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1635991485919" />
-    <state width="1398" height="299" key="GridCell.Tab.0.right/0.25.1440.825@0.25.1440.825" timestamp="1636056699494" />
+    <state width="1766" height="548" key="GridCell.Tab.0.right/0.25.1440.825/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1638557014505" />
+    <state width="1398" height="299" key="GridCell.Tab.0.right/0.25.1440.825@0.25.1440.825" timestamp="1636057080042" />
+    <state width="1398" height="321" key="GridCell.Tab.0.right/0.25.1440.875/1440.-470.2560.1440@0.25.1440.875" timestamp="1637184332901" />
+    <state width="2219" height="497" key="GridCell.Tab.0.right/0.25.1440.875/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1638066432849" />
+    <state width="2219" height="515" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1638153784521" />
     <state width="1887" height="477" key="GridCell.Tab.0.right/0.25.2560.1365@0.25.2560.1365" timestamp="1632525498630" />
-    <state width="1398" height="360" key="GridCell.Tab.1.bottom" timestamp="1635100192026">
-      <screen x="0" y="25" width="1440" height="825" />
+    <state width="2219" height="515" key="GridCell.Tab.1.bottom" timestamp="1638153784522">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state width="1398" height="360" key="GridCell.Tab.1.bottom/0.25.1440.825/1440.-470.2560.1440@0.25.1440.825" timestamp="1635100192026" />
     <state width="1724" height="503" key="GridCell.Tab.1.bottom/0.25.1440.825/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1633811342654" />
     <state width="1398" height="261" key="GridCell.Tab.1.bottom/0.25.1440.825@0.25.1440.825" timestamp="1633804524430" />
+    <state width="2219" height="515" key="GridCell.Tab.1.bottom/0.25.1440.875/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1638065025630" />
+    <state width="2219" height="515" key="GridCell.Tab.1.bottom/0.25.1440.875@0.25.1440.875" timestamp="1638153784522" />
     <state width="1887" height="477" key="GridCell.Tab.1.bottom/0.25.2560.1365@0.25.2560.1365" timestamp="1632525498631" />
-    <state width="1398" height="360" key="GridCell.Tab.1.center" timestamp="1635100192025">
-      <screen x="0" y="25" width="1440" height="825" />
+    <state width="2219" height="515" key="GridCell.Tab.1.center" timestamp="1638153784521">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state width="1398" height="360" key="GridCell.Tab.1.center/0.25.1440.825/1440.-470.2560.1440@0.25.1440.825" timestamp="1635100192025" />
     <state width="1724" height="503" key="GridCell.Tab.1.center/0.25.1440.825/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1633811342653" />
     <state width="1398" height="261" key="GridCell.Tab.1.center/0.25.1440.825@0.25.1440.825" timestamp="1633804524429" />
+    <state width="2219" height="515" key="GridCell.Tab.1.center/0.25.1440.875/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1638065025629" />
+    <state width="2219" height="515" key="GridCell.Tab.1.center/0.25.1440.875@0.25.1440.875" timestamp="1638153784521" />
     <state width="1887" height="477" key="GridCell.Tab.1.center/0.25.2560.1365@0.25.2560.1365" timestamp="1632525498631" />
-    <state width="1398" height="360" key="GridCell.Tab.1.left" timestamp="1635100192025">
-      <screen x="0" y="25" width="1440" height="825" />
+    <state width="2219" height="515" key="GridCell.Tab.1.left" timestamp="1638153784521">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state width="1398" height="360" key="GridCell.Tab.1.left/0.25.1440.825/1440.-470.2560.1440@0.25.1440.825" timestamp="1635100192025" />
     <state width="1724" height="503" key="GridCell.Tab.1.left/0.25.1440.825/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1633811342653" />
     <state width="1398" height="261" key="GridCell.Tab.1.left/0.25.1440.825@0.25.1440.825" timestamp="1633804524429" />
+    <state width="2219" height="515" key="GridCell.Tab.1.left/0.25.1440.875/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1638065025629" />
+    <state width="2219" height="515" key="GridCell.Tab.1.left/0.25.1440.875@0.25.1440.875" timestamp="1638153784521" />
     <state width="1887" height="477" key="GridCell.Tab.1.left/0.25.2560.1365@0.25.2560.1365" timestamp="1632525498630" />
-    <state width="1398" height="360" key="GridCell.Tab.1.right" timestamp="1635100192026">
-      <screen x="0" y="25" width="1440" height="825" />
+    <state width="2219" height="515" key="GridCell.Tab.1.right" timestamp="1638153784522">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state width="1398" height="360" key="GridCell.Tab.1.right/0.25.1440.825/1440.-470.2560.1440@0.25.1440.825" timestamp="1635100192026" />
     <state width="1724" height="503" key="GridCell.Tab.1.right/0.25.1440.825/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1633811342653" />
     <state width="1398" height="261" key="GridCell.Tab.1.right/0.25.1440.825@0.25.1440.825" timestamp="1633804524430" />
+    <state width="2219" height="515" key="GridCell.Tab.1.right/0.25.1440.875/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1638065025630" />
+    <state width="2219" height="515" key="GridCell.Tab.1.right/0.25.1440.875@0.25.1440.875" timestamp="1638153784522" />
     <state width="1887" height="477" key="GridCell.Tab.1.right/0.25.2560.1365@0.25.2560.1365" timestamp="1632525498631" />
-    <state x="1095" y="329" key="SettingsEditor" timestamp="1632494892148">
-      <screen x="0" y="25" width="2560" height="1365" />
-    </state>
-    <state x="1095" y="329" key="SettingsEditor/0.25.2560.1365@0.25.2560.1365" timestamp="1632494892148" />
-    <state x="534" y="262" key="Vcs.Push.Dialog.v2" timestamp="1636050388010">
+    <state x="217" y="25" key="SettingsEditor" timestamp="1638563193213">
       <screen x="0" y="25" width="1440" height="825" />
     </state>
-    <state x="534" y="262" key="Vcs.Push.Dialog.v2/0.25.1440.825@0.25.1440.825" timestamp="1636050388010" />
+    <state x="217" y="25" key="SettingsEditor/0.25.1440.825@0.25.1440.825" timestamp="1638563193213" />
+    <state x="1825" y="-42" key="SettingsEditor/0.25.1440.875/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1637184867574" />
+    <state x="1095" y="329" key="SettingsEditor/0.25.2560.1365@0.25.2560.1365" timestamp="1632494892148" />
+    <state x="534" y="262" key="Vcs.Push.Dialog.v2" timestamp="1636057067813">
+      <screen x="0" y="25" width="1440" height="825" />
+    </state>
+    <state x="534" y="262" key="Vcs.Push.Dialog.v2/0.25.1440.825@0.25.1440.825" timestamp="1636057067813" />
     <state x="1172" y="444" key="Vcs.Push.Dialog.v2/0.25.2560.1365@0.25.2560.1365" timestamp="1632525494651" />
     <state width="1280" height="720" key="XDebugger.FullValuePopup" timestamp="1633808869686">
       <screen x="1440" y="-470" width="2560" height="1440" />
     </state>
     <state width="1280" height="720" key="XDebugger.FullValuePopup/0.25.1440.825/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1633808869686" />
     <state width="720" height="412" key="XDebugger.FullValuePopup/0.25.1440.825@0.25.1440.825" timestamp="1633804510712" />
-    <state x="1993" y="133" width="1120" height="806" key="dock-window-1" timestamp="1635103014610">
+    <state x="2892" y="-436" width="1066" height="1320" key="dock-window-1" timestamp="1637258848894">
       <screen x="1440" y="-470" width="2560" height="1440" />
     </state>
     <state x="1993" y="133" width="1120" height="806" key="dock-window-1/0.25.1440.825/1440.-470.2560.1440@0.25.1440.825" timestamp="1635103014610" />
+    <state x="1441" y="-362" width="1231" height="1118" key="dock-window-1/0.25.1440.875/1440.-470.2560.1440@0.25.1440.875" timestamp="1637184251945" />
+    <state x="2892" y="-436" width="1066" height="1320" key="dock-window-1/0.25.1440.875/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1637258848894" />
+    <state x="2208" y="-47" width="1225" height="791" key="find.popup" timestamp="1638043998161">
+      <screen x="1440" y="-470" width="2560" height="1440" />
+    </state>
+    <state x="2208" y="-47" width="1225" height="791" key="find.popup/0.25.1440.875/1440.-470.2560.1440@1440.-470.2560.1440" timestamp="1638043998161" />
     <state x="385" y="174" width="670" height="676" key="search.everywhere.popup" timestamp="1633802441297">
       <screen x="0" y="25" width="1440" height="825" />
     </state>
     <state x="385" y="174" width="670" height="676" key="search.everywhere.popup/0.25.1440.825@0.25.1440.825" timestamp="1633802441297" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/NetworkLabs$rdt.coverage" NAME="rdt Coverage Results" MODIFIED="1638064799497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/P3/rdt" />
     <SUITE FILE_PATH="coverage/NetworkLabs$httplib.coverage" NAME="httplib Coverage Results" MODIFIED="1632410768770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NetworkLabs$demo_client.coverage" NAME="demo_client Coverage Results" MODIFIED="1638066184268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/P3/rdt" />
+    <SUITE FILE_PATH="coverage/NetworkLabs$pytest_in_test_client_py.coverage" NAME="pytest in test_client.py Coverage Results" MODIFIED="1637184284745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/P3/rdt" />
     <SUITE FILE_PATH="coverage/NetworkLabs$httpc.coverage" NAME="httpc Coverage Results" MODIFIED="1633809751762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NetworkLabs$httpfs.coverage" NAME="httpfs Coverage Results" MODIFIED="1636056237849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NetworkLabs$demo_connect.coverage" NAME="demo_connect Coverage Results" MODIFIED="1637185717469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/P3/rdt" />
+    <SUITE FILE_PATH="coverage/NetworkLabs$httpfs.coverage" NAME="httpfs Coverage Results" MODIFIED="1637256717267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NetworkLabs$demo_server.coverage" NAME="demo_server Coverage Results" MODIFIED="1638556825510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/P3/rdt" />
   </component>
 </project>
